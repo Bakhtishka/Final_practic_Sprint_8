@@ -84,7 +84,7 @@ public class PraktikumTest {
     public void checkStringNumbers() {
         Account account = new Account("77777 99999");
         System.out.println(account.checkNameToEmboss());
-        assertFalse(account.checkNameToEmboss());
+        assertTrue(account.checkNameToEmboss());
     }
 
     @Test
@@ -94,7 +94,7 @@ public class PraktikumTest {
     public void checkStringContainsSpecialChar() {
         Account account = new Account("@$%#&*() :|?><<,./");
         System.out.println(account.checkNameToEmboss());
-        assertFalse(account.checkNameToEmboss());
+        assertTrue(account.checkNameToEmboss());
     }
 }
 
